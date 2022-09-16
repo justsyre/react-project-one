@@ -21,7 +21,9 @@ const AddUser = (props) => {
       return;
     }
 
-    console.log(enteredUsername, enteredAge);
+    //Lifting the state up
+    // console.log(enteredUsername, enteredAge);
+    props.onAddUser(enteredUsername, enteredAge);
 
     // Reset the current state by returning an empty value
     setEnteredUsername("");
